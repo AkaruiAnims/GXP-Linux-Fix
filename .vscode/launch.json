@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and Run Locally",
+            "type": "f5anything",
+            "request": "launch",
+            "command": "env LUTRIS_SKIP_INIT=1 flatpak run net.lutris.Lutris lutris:rungameid/1",
+            "preLaunchTask": "build",
+        }
+    ]
+}

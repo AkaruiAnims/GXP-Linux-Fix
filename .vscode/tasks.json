@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "msbuild",
+            "type": "shell",
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "/t:build",
+                "/p:Configuration=Debug",
+                "/verbosity:minimal",
+                "${workspaceFolder}/GXPEngine/GXPEngine.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
